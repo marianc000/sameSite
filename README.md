@@ -1,4 +1,4 @@
-# Important difference between standard HTML tables and div tables
-And a critical difference between div tables
+# Cross-Site Request Forgery attacks are not feasible anymore
+The server-side code protecting from CSRF attacks is doomed to extinction
 
-Sample code for my post https://marian-caikovski.medium.com/important-difference-between-standard-html-tables-and-div-tables-b6b094ec2c79 comparing performance of standard HTML tables and div tables
+Sample code for my post https://marian-caikovski.medium.com/cross-site-request-forgery-attacks-are-not-feasible-anymore-9f84e05b757d illustrating the effects of SameSite cookie attribute
