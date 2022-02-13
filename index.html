@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <title>SameSite</title>
+  <base href="https://samesitecookies.onrender.com/">
+  <!-- <base href="http://localhost:3000/"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Illustration for <a href='https://javascript.plainenglish.io/can-console-log-cause-memory-leaks-how-to-make-a-browser-crash-with-console-log-b94e4d248ed8'>post about SameSite cookies</a></h1>
+        <div class="requests">
+            <img src="imgs/logo.png">
+            <a href="/">Home</a>
+            <form method="post" action="/">
+                <input type="text" name="str" value="test">
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="fetch">
+                <button type="button" id="getBtn">Fetch Get</button>
+                <button type="button" id="postBtn">Fetch Post</button>
+            </div>
+
+            <button type="button" id="iframeBtn">Add iframe</button>
+            <div id="iframeDiv"></div>
+        </div>
+        <div id="logDiv"></div>
+    </div>
+ 
+</body>
+</html>
