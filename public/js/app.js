@@ -12,12 +12,19 @@ function onLoaded(res) {
     res.json().then(data => console.log(data));
 }
  
-const path = new URL(BASE_URL).pathname;
-console.log("BASE_URL", BASE_URL);
-console.log("path", path);
+// const path = new URL(BASE_URL).pathname;
+// console.log("BASE_URL", BASE_URL);
+// console.log("path", path);
 
-const url = BASE_URL.replace('http', 'ws').replace(path, '') + 'log';
-console.log("url", url);
+// const url = BASE_URL.replace('http', 'ws').replace(path, '') + 'log';
+// console.log("url", url);
+ 
+const path = new URL(BASE_URL).pathname.replace('/','');
+
+let url = BASE_URL.replace('http', 'ws').replace(path, '') + 'log';
+
+console.log("url",BASE_URL, path,url); 
+
 const socket = new WebSocket(url);
 
 socket.onopen = () => {
